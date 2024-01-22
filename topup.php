@@ -51,15 +51,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["nominal"]) && isset($_
         
         <label for="nominal">Nominal Top Up:</label>
         <select id="nominal" name="nominal" required>
-            <option value="10">Rp 5,000 = 35 Diamond</option>
-            <option value="10">Rp 10,000 = 75 Diamond</option>
-            <option value="10">Rp 20,000 = 140 Diamond</option>
-            <option value="20">Rp 30,000 = 210 Diamond</option>
-            <option value="50">Rp 50,000 = 350 Diamond</option>
-            <option value="70">Rp 70,000 = 635 Diamond</option>
-            <option value="80">Rp 80,000 = 710 Diamond</option>
-            <option value="100">Rp 100,000 = 920 Diamond</option>
-            <option value="135">Rp 135,000 = 1200 Diamond</option>
+            <option value="5.000">Rp 5,000 = 35 Diamond</option>
+            <option value="10.000">Rp 10,000 = 75 Diamond</option>
+            <option value="20.000">Rp 20,000 = 140 Diamond</option>
+            <option value="30.000">Rp 30,000 = 210 Diamond</option>
+            <option value="50.000">Rp 50,000 = 350 Diamond</option>
+            <option value="70.000">Rp 70,000 = 635 Diamond</option>
+            <option value="80.000">Rp 80,000 = 710 Diamond</option>
+            <option value="100.000">Rp 100,000 = 920 Diamond</option>
+            <option value="135.000">Rp 135,000 = 1200 Diamond</option>
         </select><br>
 
         <label for="metode_pembayaran">Metode Pembayaran:</label>
