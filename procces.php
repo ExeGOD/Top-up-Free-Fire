@@ -9,10 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Proses autentikasi (contoh sederhana, bisa diganti dengan validasi sesuai kebutuhan)
     if ($username == "user" && $password == "password") {
         $_SESSION['username'] = $username; // Simpan username ke dalam session
-        header("Location: topup.php?username=" . urlencode($username)); // Redirect ke halaman topup.php dengan menggunakan metode GET
+        header("Location: topup.php"); // Redirect ke halaman topup.php
         exit();
     } else {
-        echo "";
+        echo "Invalid username or password";
     }
 }
 ?>
@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="procces.css">
 </head>
 <body>
-    <form action="topup.php" method="post">
+    <form action="" method="post">
         <h2>Login Form</h2>
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br>
@@ -36,6 +36,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <input type="submit" value="Login">
     </form>
-
 </body>
 </html>
